@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*公共样式*/
+*{
+	padding:0;
+	margin:0;
+	font-family:Helvetica;
+}
+@media screen and (device-width: 320px){
+        .user_infobg span{font-size: 12px;}
+ }
+
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    max-width:960px;
+    margin: auto;
+    background-color: #f5f5f9;
+	padding-bottom:5px;
+}
+.info{padding:1em;position:relative; background:white}
+.user_info{padding:1em;position:relative}
+.header{padding:0.5em;background:#e54b41;text-align:center;color:#FFFFFF; font-weight:bolder;position:relative}
+.back{
+    height: 70%;
+    background: url(../images/back.png) left center no-repeat;
+    background-size: contain;
+    width: 2em;
+    position: absolute;
+    left: 1em;
+    top: 15%;}
+.header .btn1{position: absolute;top: 0;right: 0;margin: 0;padding: 0; display: inline-block;padding: 0.5em 1em;}
+.caret{
+ 	background:url(../images/arrow-right.png) right center no-repeat;
+}
+.caret-down{
+ 	background:url(../images/arrow-down.png) right center no-repeat;
+}
+.title{
+	padding:1em;
+	background:white;
+}
+.content {
+    padding: 0 0 0 3em;
+}
+.title_custom{
+	padding:1em;
+	background:white;
+}
+
+.line{
+	color:#409bf7;
+	padding:0 1px;
+	background:#409bf7;
+	margin-right:0.5em;
+}
+.user_photo{max-height:5em;border-radius:25%;vertical-align: middle;}
+.border{border:1px solid #ECE1E1 !important}
+.border_top{border-top: 1px solid #ECE1E1;}
+.border_bottom{border-bottom: 1px solid #ECE1E1;}
+.red{color:#e54b41!important}
+.btn{background:#e54b41;border-radius: 5px;color:white; font-weight:bolder;text-align: center; padding: 0.5em; margin: 1em;}
+.btnbig{background:#e54b41;border-radius: 5px;color:white; font-weight:bolder;text-align: center; padding: 0.5em; margin: 1em; display:block}
+/*我的简历样式——编辑*/
+.resume li{list-style:none;padding: 10px 10px 10px 0; position:relative}
+.info_resume{padding: 0 0 0 1em; background:white}
+.resume li h3{display:inline-block;color:#686869}
+.resume li a,.resume li label{float:right;color: #858686;padding-right: 1.5em; text-decoration:none;font-size:1.2em}
+.resume li select{float:right;color: #858686;padding-right:1em; text-decoration:none;-webkit-appearance:none; /* Safari 和 Chrome */;border:none;font-size:1.2em}
+.resume li input[type=text]{text-align:right;padding-right:1em;max-width:60%}
+.resume li input[type=date] {text-align: right}
+.resume li input{color: #858686;text-decoration:none;border:none;font-size:1.2em;float:right;text-align: center;}
+.require{position:absolute;top: 1em;left: -0.8em;}
+.maskwrapper{position:absolute; width:100%;height:100%; background:none;top:0}
+.mask{position:absolute; width:100%;top:0; left:0;z-index:20;width:80%;left:10%;top:10%}
+.mask li a{padding:0.5em 1em !important;color:white;}
+.select_custom li select{float:none}
+.work_experience{margin-bottom:0.5em}
+.quit_job{float:right;padding:0 0 0 1.5em; background:url(../images/quit.png) left center no-repeat; background-size:contain;color:#409bf7}
+.add_job{padding:0 0 0 1.5em; background:url(../images/addjob.png) left center no-repeat; background-size:contain}
+.edit_job{float:right;padding:0 0 0 1.5em; background:url(../images/editjob.png) left center no-repeat; background-size:contain;color:#409bf7}
+/*我的简历样式——展示*/
+.resume_show p{padding:0.5em 0;}
+.resume_show label span:first-child{color:#858686}
+.user_infobg{background:#e54b41;padding-top:2em}
+.user_infobg a{position:absolute;right: 1em;top:0;padding: 0.5em 1em;color:rgb(242, 242, 242); text-decoration: none;font-weight: bold;font-size: 15px;}
+.work_place,.work_kind{position:relative}
+.work_place_left,.work_kind_left{position: absolute;left: 0;top: 0;width: 5em;}
+.work_place_right,.work_kind_right{display:block;margin-left:5em;}
+.work_time{border:1px solid #ECE1E1}
+.work_time .regular-checkbox:checked + label{background-color: #FFFFFF;!important}
+.description label{width:24%;padding:0.5em; background:#7ec7fe;text-align:center;display: inline-block;margin-top: 0.5em;border-radius: 2px;color:#FFFFFF;font-weight:bolder}
+.experience li{list-style:none;padding:0.5em 0}
+.experience p label:last-child{float:right}
+
+/*我的简历样式——工作时间*/
+table{width:100%; background:white}
+table td{height:3em;text-align:center;border-top: 1px solid #ECE1E1; border-right:1px solid #ECE1E1;}
+table td:first-child{font-weight: bolder;}
+table td:last-child{border-right:none;}
+table th{height:2em;border-right:1px solid #ECE1E1;}
+table th img{vertical-align: middle;margin-right: 5px;}
+table th:last-child{border-right:none;}
+table input{width:100%;height:100%}
+
+.regular-checkbox,.regular-checkall{
+	display: none;
+}
+.regular-checkbox + label {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+  	height: 100%;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #e0f0ff;
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 2em;
+	color: #60b2fe;
+}
+
+.big-checkbox:checked + label:after {
+	font-size:2em;
+}
+.regular-checkall+ label {
+	display: inline-block;
+	width: 1.2em;
+  	height: 1.2em;
+  	background: #60b2fe;
+  	position: absolute;
+  	top: 0;
+	left: 0;
+  	margin-right: 10px;
+	text-align: center;
+}
+.regular-checkall:checked + label:after {
+	content: '\2714';
+	font-size: 1em;
+	color:white;
+}
+/*我的简历样式-发布简历*/
+.progress {
+    height: 7px;
+    overflow: hidden;
+    background-color:#CAC9C9;
+    border-radius: 4px;
+	padding: 2px 0;
+	margin: 0.5em 2em;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color:#e54b41;
+	border-radius: 4px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+	
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+/*我的简历样式-保存简历*/
+.save_pic{
+	display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background:#409bf7;
+    border-radius: 80px;
+	position:relative;
+	text-align:center;
+	}
+.save_pic img{margin:13px;}
+.save_pic:before {
+    content: "";
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border-radius: 100px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: block;
+    border: 20px solid white;
+    box-shadow: 0px 0px 10px #A19797;
+}
+ 
+ /*我的简历样式-优化简历*/
+.operation_nav{
+  padding: 1em 0em 1em 1.5em;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  z-index:10;
+}
+.operation_nav li{list-style:none}
+.operation_nav li a{margin-bottom:0.2em;background-color: white;}
+.edit_show{height:0.6em;width:0.6em;position:absolute;background:url(../images/edit.png);background-size:contain;right: 0.8em;top: 1.8em;z-index:11;}
+.hidden{display:none}
+/*工作详情样式*/
+.point{
+	position:absolute;
+	left:-1.7em;;
+	top:1em;
+	
+}
+.line_bg{
+ background:url(../images/line.png) 2em top repeat-y;
+}
+.smile{
+ margin:1em;
+ vertical-align:middle
+}
+.list li{list-style:none;padding:1em;position:relative}
+.list li h3{margin-bottom:1em}
+.list h3 span{color:red;margin-left:1em}
+.work_status{
+	position:relative;
+	border: 1px solid #ECE1E1;
+}
+.work_status>div{position:absolute; height:100%;left:122px;top:0}
+.work_status>div>h3{margin-top: 38px;margin-bottom: 14px;color: #333;}
+

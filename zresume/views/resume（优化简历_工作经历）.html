@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" media="all">
+<link rel="stylesheet" href="../css/site.css"/>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<title>工作经历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+	<div class="wrapper">
+		<!--顶部标题与操作按钮开始 -->
+		<div class="header"><label>工作经历</label></div>
+		<!--顶部标题与操作按钮结束 -->
+             
+        <!--修改工作经历开始 -->
+		<div class="work_experience border">
+			<h3 class="title" style="position:relative">
+				<span class="line">|</span>工作经历1
+				<ul class="operation_nav">
+					<li><a class="edit_job">修改</a></li>
+					<li><a class="quit_job hidden">删除</a></li>
+					<li><a class="edit_job hidden">取消</a></li>
+				</ul>
+				<a class="edit_show" onclick="$(this).hide();$('a.hidden').show()"></a>
+			</h3>
+			<ul class="resume info_resume">
+				<li class="border_bottom">
+					<h3>公司名称</h3>
+					<input type="text" placeholder="请填公司名称" value="百度"></input>
+				</li>
+				<li class="border_bottom">
+					<h3>工作岗位</h3>
+					<input type="text" placeholder="请填写工作岗位" value="web前端攻城狮"></input>
+				</li>
+				<li class="border_bottom">
+					<h3>开始时间</h3>
+					<input type="date" placeholder="请选择开始的时间" value="2011-01-04"></input>
+				</li>
+				<li class="border_bottom">
+					<h3>结束时间</h3>
+					<input type="date" placeholder="请选择结束的时间" value="2015-09-20"></input>
+				</li>
+				<li>
+					<h3>工作内容</h3><br/><br/>
+					<textarea rows="5" cols="20" maxlength="50" placeholder="不超过150个字" style="width:100%;resize:none;font-size:1em;">工作经历工作经历</textarea>
+				</li>
+			</ul>
+		</div>
+        <!--编辑工作经历结束 -->
+        
+       
+       <!--增加工作经历开始 --> 
+       <div class="work_experience border">
+       		<!--增加工作经历操作按钮开始 --> 
+       		<h3 class="title">
+                <a onClick="$(this).parent('.title').hide().siblings().show();" class="add_job">工作经历2</a>
+			</h3>
+            <!--增加工作经历操作按钮结束 --> 
+			<h3 class="title" style="display:none">
+				<span class="line">|</span>工作经历2
+                <a class="quit_job">取消</a>
+			</h3>
+			<ul class="resume info_resume border_bottom" style="display:none">
+				<li class="border_bottom">
+					<img class="require" alt="必填图标" src="../images/require.png"/>
+					<h3>公司名称</h3>
+					<input type="text" placeholder="请填公司名称"></input>
+				</li>
+				<li class="border_bottom">
+					<img class="require" alt="必填图标" src="../images/require.png"/>
+					<h3>工作岗位</h3>
+					<input type="text" placeholder="请填写工作岗位"></input>
+				</li>
+				<li class="border_bottom">
+					<h3>开始时间</h3>
+					<input type="date" placeholder="请选择开始的时间" class="caret"></input>
+				</li>
+				<li class="border_bottom">
+					<h3>结束时间</h3>
+					<input type="date" placeholder="请选择结束的时间" class="caret"></input>
+				</li>
+				<li>
+					<h3>工作内容</h3><br/><br/>
+					<textarea rows="5" cols="20" maxlength="50" placeholder="不超过150个字" style="width:100%;resize:none;font-size:1em;"></textarea>
+				</li>
+			</ul>
+		</div>
+        <!--增加工作经历结束 --> 
+		
+	</div>
+</body>
+</html>
