@@ -1,0 +1,397 @@
+@charset "utf-8";
+/*公共样式*/
+*{
+    padding:0;
+    margin:0;
+    font-family:Helvetica;
+}
+@media screen and (device-width: 320px){
+        .user_infobg span{font-size: 12px;}
+        .company_info p label{font-size: 12px;}
+        .company_info h3{font-size: 15px;}
+        .company_blue{width:2em!important}
+        .company_info{width:14em!important;}
+        .post_0ffice>a{ width:21%!important;}
+        .post_0ffice>a:first-child{ width:26.5%!important;}
+ }
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    max-width:960px;
+    margin: auto;
+    background-color: #f5f5f9;
+    padding-bottom:5px;
+    position:relative
+}
+.info{padding:1em;position:relative; background:white}
+.nopadding{padding:0}
+.nopadding0{padding:0 !important}
+.paddingBottom{padding-bottom:0 !important}
+.marginLeft0{margin-left:0!important}
+.marginBottom0{margin-bottom:0!important}
+.paddingLeft1{padding-left:2em !important}
+.search{text-align:center;background:white}
+.search select{font-size:1em;padding:0.5em;border:none;color:#999999; font-weight:bolder;}
+.user_info{padding:1em;position:relative}
+.header{padding:1em 0.5em;background:#e54b41;text-align:center;color:#FFFFFF; font-weight:bolder;position:relative}
+.back{
+    height: 70%;
+    background: url(../images/back.png) left center no-repeat;
+    background-size: contain;
+    width: 2em;
+    position: absolute;
+    left: 1em;
+    top: 15%;}
+.header .btn1{position: absolute;top:0.5em;right: 0;margin: 0;padding: 0; display: inline-block;padding: 0.5em 1em;}
+.caret{
+    background:url(../images/arrow-right.png) right center no-repeat;
+}
+.caret-up{
+    background:url(../images/arrow-up.png) right center no-repeat;
+}
+.caret-down{
+    background:url(../images/arrow-down.png) right center no-repeat;
+}
+.title{
+    padding:1em;
+    background:white;
+}
+.content {
+    padding: 0 0 0 3em;
+}
+.title_custom{
+    padding:1em;
+    background:white;
+}
+
+.line{
+    color:#409bf7 !important;
+    padding:0 1px;
+    background:#409bf7;
+    margin-right:0.5em;
+}
+.user_photo{max-height:5em;border-radius:25%;vertical-align: middle;}
+.border{border:1px solid #ECE1E1 !important}
+.border_top{border-top: 1px solid #ECE1E1;}
+.border_bottom{border-bottom: 1px solid #ECE1E1;}
+.red{color:#e54b41!important;}
+.yellow{color:rgb(252, 230, 7)!important}
+.bolder{color:#333}
+._bolder{color:#333;font-weight:bold}
+.btn{background:#e54b41;border-radius: 5px;color:white; font-weight:bolder;text-align: center; padding: 0.5em; margin: 1em;}
+.btnbig{background:#e54b41;border-radius: 5px;color:white; font-weight:bolder;text-align: center; padding:1em; margin: 1em; display:block}
+/*我的简历样式——编辑*/
+.resume li{list-style:none;padding: 10px 10px 10px 0; position:relative}
+.info_resume{padding: 0 0 0 1em; background:white}
+.resume li h3{display:inline-block;color:#686869}
+.resume li a,.resume li label{float:right;color: #858686;padding-right: 1.5em; text-decoration:none;font-size:1.2em}
+.resume li select{float:right;color: #858686;padding-right:1em; text-decoration:none;-webkit-appearance:none; /* Safari 和 Chrome */;border:none;font-size:1.2em}
+.resume li input[type=text]{text-align:right;padding-right:1em;max-width:60%}
+.resume li input[type=date] {text-align: right}
+.resume li input{color: #858686;text-decoration:none;border:none;font-size:1.2em;float:right;text-align: center;}
+.require{position:absolute;top: 1em;left: -0.8em;}
+.maskwrapper{position:absolute; width:100%;height:100%; background:none;top:0}
+.mask{position:absolute; width:100%;top:0; left:0;z-index:20;width:80%;left:10%;top:10%}
+.mask li a{padding:0.5em 1em !important;color:white;}
+.select_custom li select{float:none}
+.work_experience{margin-bottom:0.5em}
+.quit_job{float:right;padding:0 0 0 1.5em; background:url(../images/quit.png) left center no-repeat; background-size:contain;color:#409bf7}
+.add_job{padding:0 0 0 1.5em; background:url(../images/addjob.png) left center no-repeat; background-size:contain}
+.edit_job{float:right;padding:0 0 0 1.5em; background:url(../images/editjob.png) left center no-repeat; background-size:contain;color:#409bf7}
+/*我的简历样式——展示*/
+.resume_show p{padding:0.5em 0;}
+.resume_show label span:first-child{color:#858686}
+.user_infobg{background:#e54b41;padding-top:2em}
+.user_infobg a{position:absolute;right: 1em;top:0;padding: 0.5em 1em;color:rgb(242, 242, 242); text-decoration: none;font-weight: bold;font-size: 15px;}
+.work_place,.work_kind{position:relative}
+.work_place_left,.work_kind_left{position: absolute;left: 0;top: 0;width: 5em;}
+.work_place_right,.work_kind_right{display:block;margin-left:5em;}
+.work_time{border:1px solid #ECE1E1}
+.work_time .regular-checkbox:checked + label{background-color: #FFFFFF;!important}
+.description label{min-width:24%;padding:0.5em; background:#7ec7fe;text-align:center;display: inline-block;margin-top: 0.5em;border-radius: 2px;color:#FFFFFF;font-weight:bolder}
+.experience li{list-style:none;padding:0.5em 0}
+.experience p label:last-child{float:right}
+
+/*我的简历样式——工作时间*/
+table{width:100%; background:white}
+table td{height:3em;text-align:center;border-top: 1px solid #ECE1E1; border-right:1px solid #ECE1E1;}
+table td:first-child{font-weight: bolder;}
+table td:last-child{border-right:none;}
+table th{height:2em;border-right:1px solid #ECE1E1;}
+table th img{vertical-align: middle;margin-right: 5px;}
+table th:last-child{border-right:none;}
+table input{width:100%;height:100%}
+
+.regular-checkbox,.regular-checkall{
+    display: none;
+}
+.regular-checkbox + label {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+    background-color: #e0f0ff;
+    color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 2em;
+    color: #60b2fe;
+}
+
+.big-checkbox:checked + label:after {
+    font-size:2em;
+}
+.regular-checkall+ label {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: #60b2fe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    text-align: center;
+}
+.regular-checkall:checked + label:after {
+    content: '\2714';
+    font-size: 1em;
+    color:white;
+}
+
+/*我的简历样式——意向工作选择*/
+
+.workwill{text-align:center;background:none}
+.wregular-checkbox{
+    display: none;
+}
+.wregular-checkbox + label {
+    min-width:24%;
+    padding:0.5em; 
+    background:#7ec7fe;
+    text-align:center;
+    display:inline-block;
+    margin-top: 0.5em;
+    border-radius: 2px;
+    color:#FFFFFF;
+    font-weight:bolder
+}
+
+.wregular-checkbox + label:active, .wregular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.wregular-checkbox:checked + label {
+    background:#c6c6c6;
+    color:#FFFFFF;
+}
+
+
+
+/*我的简历样式-发布简历*/
+.progress {
+    height: 7px;
+    overflow: hidden;
+    background-color:#CAC9C9;
+    border-radius: 4px;
+    padding: 2px 0;
+    margin: 0.5em 2em;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color:#e54b41;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+/*我的简历样式-保存简历*/
+.save_pic{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background:#409bf7;
+    border-radius: 80px;
+    position:relative;
+    text-align:center;
+    }
+.save_pic img{margin:13px;}
+.save_pic:before {
+    content: "";
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border-radius: 100px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: block;
+    border: 20px solid white;
+    box-shadow: 0px 0px 10px #A19797;
+}
+ 
+ /*我的简历样式-优化简历*/
+.operation_nav{
+  padding: 1em 0em 1em 1.5em;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  z-index:10;
+}
+.operation_nav li{list-style:none}
+.operation_nav li a{margin-bottom:0.2em;background-color: white;}
+.edit_show{height:0.6em;width:0.6em;position:absolute;background:url(../images/edit.png);background-size:contain;right: 0.8em;top: 1.8em;z-index:11;}
+.hidden{display:none}
+
+/*浏览工作-职位详情页*/
+.job_tab label{padding: 0.4em 1em;background: none;border: 1px solid rgb(236, 236, 236);border-radius: 2px;}
+.job_tab label.first{margin-right:-6px;}
+.job_tab label.select{background:rgb(250, 250, 250);color: #e54b41;}
+.job_info{padding-bottom:0}
+.job_info p {padding:0.5em 0}
+.job_info p img{vertical-align: bottom;margin-right: 5px;}
+.job_info_foot{text-align:center}
+.job_info_foot .foot_phone,.job_info_foot .foot_share{text-align: center;display: inline-block;padding: 0.5em 1em;}
+.job_info_foot .foot_phone img,.job_info_foot .foot_share img{margin-bottom:0.5em}
+.job_info_foot .foot_join{  padding: 1em 10%;border: 1px solid #e54b41;display: inline-block; position: relative;top: -1em;border-radius: 5px;color: #e54b41;font-weight: bolder;}
+.empty{background:none!important}
+.job_mark{position: absolute;height: 1.5em;left: 0;top:0.5em;}
+
+.company_span {font-size:1.5em; color:#999999}
+.company_blue{display: inline-block;width:3em;height:4em;background:#89d8dd;}
+.company_green{display: inline-block;width:22%;height:5em;background:#89d8dd;}
+.company_info{margin-left:0.5em;display: inline-block;width:80%}
+.company_info>h3>span{float:right!important}
+.company_info label img{vertical-align: bottom;}
+#company_info .list li{padding-right:0.5em!important;}
+.company_checkbox{margin:1em; position:relative; padding-left:2em}
+.company-check{
+    display: none;
+}
+
+.company-check+ label {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background:none;
+    position: absolute;
+    top:1.5em;
+    left:-2.5em;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #DADADA;
+}
+
+.company-check:checked+ label {
+    background:#F7FFFD;
+}
+.company-check:checked + label:after {
+    content: '\2714';
+    font-size: 1em;
+    color:#60b2fe;
+}
+/*招聘管理样式*/
+.employ{background:white;height:138px;padding:1em 0; text-align:center}
+.employ_a{width:45%;position:relative;display:inline-block}
+.employ_number{position: absolute;top: 30px;left: 0;width: 100%;font-size: 4em;}
+.employ_state{position:absolute;display:inline-block;width:100%;left:0;bottom:10px;font-size:1.5em;font-weight:bolder;color:white}
+.employ_span{display: inline-block;width: 0.3%;text-align: center;height: 142px;position: absolute;background:#ECE1E1; color:#ECE1E1}
+
+/*招聘管理-已申请样式*/
+.applied li>img{width:20%;max-width:5em}
+.applied li>p{display: inline-block;position:relative;margin-left:0.5em}
+.applied p>label{line-height:150%}
+.no_check{  padding: 0.3em 0.5em;
+  background: #C2C2C2;
+  position: absolute;
+  right: 1em;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3em;
+ }
+.reception{  padding: 0.3em 0.5em;
+  background:#409bf7;
+  position: absolute;
+  right: 1em;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3em;
+ }
+.hire{  padding: 0.3em 0.5em;
+  background:#4ad39d;
+  position: absolute;
+  right: 1em;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3em;
+ }
+.applied_operation{text-align:center}
+.applied_operation a{padding:0.4em 0.6em;display: inline-block;border-radius: 5px;border:1px solid #C2C2C2;color: #999999;font-weight: bold;}
+.applied_operation a img{width:1em;vertical-align: top;margin: 0 0.5em;}
+.red_border{border:1px solid #e54b41!important;color: #e54b41!important;}
+.toggle{height: 22px;text-align: center;padding-top: 0.5em;}
+.toggle>label{height: 22px;width: 22px;display: inline-block;}
+.reason{padding:0.5em 0}
+
+
+/*发布优活样式*/
+.post_0ffice{margin-top:5px}
+.post_0ffice>a{display:inline-block; width:23%; text-align:center;padding:0.5em 0}
+.post_0ffice>a>img{ vertical-align:middle;width: 1em; margin-right: 0.5em;}
+/*工作详情样式*/
+.point{
+    position:absolute;
+    left:-1.7em;;
+    top:1em;
+    
+}
+.line_bg{
+ background:url(../images/line.png) 2em top repeat-y;
+}
+.smile{
+ margin:1em;
+ vertical-align:middle
+}
+.list li{list-style:none;padding:1em;position:relative;background-color:white;}
+.list li p{padding:0.3em 0;color:#666666}
+.list li h3{margin-bottom:1em}
+.list h3 span{color:red;margin-left:1em}
+.work_status{
+    position:relative;
+    border: 1px solid #ECE1E1;
+}
+.work_status>div{position:absolute; height:100%;left:122px;top:0}
+.work_status>div>h3{margin-top: 38px;margin-bottom: 14px;color: #333;}
+

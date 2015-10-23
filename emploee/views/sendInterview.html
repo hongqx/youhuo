@@ -1,0 +1,100 @@
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" media="all">
+<title>面试邀请</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head
+<link rel="stylesheet" href="../css/site.css"/>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="../js/app.js"></script>
+<body>
+	<div class="wrapper">
+        <!--顶部标题与操作按钮开始 -->
+		<div class="header">
+            <a class="back">&nbsp;&nbsp;</a>
+            <label>填写面试邀请信息</label>
+        </div>
+		<ul class="resume info_resume border_bottom border_top">
+          <li class="border_bottom">
+                <img class="require" alt="必填图标" src="../images/require.png">
+                <h3>面试时间:</h3>
+                <input type="datetime-local" styl="width:60%;"id="js_time" placeholder="请选择面试时间" class="caret">
+          </li>
+        	<li class="border_bottom">
+                <img class="require" alt="必填图标" src="../images/require.png">
+                <h3>面试地点:</h3>
+                <input type="text" id="js_addr" placeholder="请填写面试地点">
+            </li>
+            <li class="border_bottom">
+                <img class="require" alt="必填图标" src="../images/require.png">
+                <h3>面试人:</h3>
+                <input type="text" id="js_name" placeholder="请填写面试人姓名">
+            </li>
+            <li class="border_bottom">
+                <img class="require" alt="必填图标" src="../images/require.png">
+                <h3>面试人电话:</h3>
+                <input type="tel" id="js_phoneNum" placeholder="请填写面试人电话">
+            </li>    
+        </ul>
+        
+        <!--保存按钮开始 -->
+        <a class="btnbig" id="js_save" href="javascript:void(0)">提交邀请</a>
+        <!--保存按钮结束 -->
+	</div>
+  <script type="text/javascript">
+     (function(win,$){
+         var data = {}; 
+         //获取链接中带过来的应聘者id
+         function getInterviewId(){
+             var _arr = location.href.split("?")[1].split("&");
+             for(var i = 0 , len = arr.length ; i < len ; i++){
+                 var _iArr = _arr[i].split("=");
+                 if(_iArr[0]==="interviewId"){
+                   return _iArr[1];
+                 }
+             }
+             return "";
+         }
+
+         $("#js_save").on("click",function(){
+             data["interview_date"] = $("#js_time").val().replace("T"," ");
+             data["interview_location"] = $("#js_addr").val();
+             data["contactor"] = $("#js_name").val();
+             data["contactor_phone"] = $("js_phoneNum").val();
+             data["interviewer"] = loc 
+             var flag = checkinfo(data);
+             if(!flag){
+                alert("数据填写不完全，请检查！");
+                return;
+             }
+             sendInfo(data);
+
+         },false);
+         function checkinfo(data){
+             if(data["interview_date"] && data["interview_location"]){
+                return true;
+             }
+             return false;
+         }
+         /*向后台提交面试邀请*/
+         function sendInfo(data){
+            data.interviewer = getInterviewId();
+            $.ajax({
+              url: window.api_host + 'youhuo/interview_invite',
+              type: 'post',
+              data:data,
+              dataType: 'json',
+              success:function(data){
+                    callBack();
+              }
+            });
+         }
+         function callBack(){
+
+         }
+     })(window,jQuery);
+  </script>
+
+</body></html>
